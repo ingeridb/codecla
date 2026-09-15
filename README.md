@@ -25,6 +25,12 @@ touch index.html
 
 Follow the instructions provided in the [Classroom](https://classroom.google.com/u/1/c/NjgxMDAzMTQ1MzQ2/a/NjgxMTg5ODA2MTc1/details) to complete the assignment tasks.
 
+## Netlify
+
+Netlify is a platform for deploying and hosting websites directly from a GitHub repository.
+
+Visit our Netlify site: https://codelabsingerid.netlify.app/
+
 ## Submitting Your Assignment
 
 - **Commit your changes:**
