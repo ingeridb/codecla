@@ -1,0 +1,337 @@
+:root {
+  --primary-color: #8053ff;
+  --main-body-color: #23155b;
+  --gray-light-color: #f4f4f4;
+  --white-color: #ffffff;
+  --background-color: #817d8e;
+  --sign-button: blue;
+}
+
+body {
+  font-family: "Noto Sans Khojki", sans-serif;
+}
+
+h2,
+h3 {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Design for buttons */
+button {
+  background-color: var(--primary-color);
+  color: var(--gray-light-color);
+  opacity: 0.75;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Different style for login and sign-up buttons */
+.sign-btn {
+  background-color: var(--sign-button);
+  border: none;
+  align-self: center;
+  width: 60%;
+}
+
+/* General form design */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+}
+
+.form-label {
+  color: var(--white-color);
+  margin-bottom: 5px;
+}
+
+.form-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.form button {
+  width: auto;
+  padding: 15px 10px;
+  margin-top: 15px;
+  border: none;
+}
+
+/*INDEX.HTML*/
+
+/* Navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.logo,
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+  text-align: center;
+  padding: 75px;
+  margin: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Section for statics of the system
+Note: probably have to change the sizing of the grid/boxes later on for responsive design */
+.practice {
+  text-align: center;
+  background-color: var(--background-color);
+  padding: 20px;
+  margin: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-auto-rows: 75px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stats > .box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  background-color: var(--gray-light-color);
+  border-radius: 2px;
+}
+
+/* Feature section for coders and managers */
+
+.benefits {
+  padding: 20px;
+  margin: 20px;
+  background-color: var(--background-color);
+}
+
+.benefits h2 {
+  font-size: 1rem;
+}
+
+.benefits h3 {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.benefits h3 > span {
+  color: var(--primary-color);
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  justify-content: center;
+  gap: 20px;
+}
+
+.benefit-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--background-color);
+
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-align: left;
+
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.benefit-box img {
+  width: 15px;
+}
+
+/* Showcase section */
+.showcase {
+  display: flex;
+  background-color: var(--background-color);
+  margin: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.classroom {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  height: 400px;
+}
+
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  gap: 1px;
+}
+
+.showcase-logo {
+  width: 60px;
+}
+
+.showcase h2 {
+  color: black;
+}
+
+/* Testimonials section
+OBS: buttons will be fixed in the Responsive Design Assignment  */
+.testimonials {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--gray-light-color);
+  padding: 40px 20px 40px 20px;
+  border-radius: 20px;
+  max-width: 275px;
+  margin-bottom: 30px;
+}
+
+.testimonial-text {
+  font-size: 0.7rem;
+  max-width: 250px;
+}
+
+.testimonial-img {
+  width: 75px;
+  border-radius: 50%;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+.testimonial-title {
+  font-weight: bold;
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+/* Contact us/header section */
+.contact {
+  background-color: var(--background-color);
+}
+
+.contact-form {
+  background-color: var(--main-body-color);
+  border-top-left-radius: 100px;
+  padding: 10px 40px;
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.footer {
+  color: var(--white-color);
+  text-align: center;
+}
+
+/* SIGNIN.HTML and SIGNUP.HTML */
+
+/* Sign-in and sign-up pages */
+.signin {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+.signin > .boy-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-body-color);
+}
+
+.signin > .boy-side img {
+  width: 50%;
+}
+
+.signin > .form-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-side > .form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 1px rgba(41, 39, 39, 0.1);
+  width: 350px;
+}
+
+.form-side h1 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.form-side form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  width: 100%;
+}
+
+.signin .sign-form .form-input {
+  background-color: var(--main-body-color);
+  border: none;
+  color: var(--white-color);
+}
+
+.signin .sign-form .form-input::placeholder {
+  color: white;
+  opacity: 0.75;
+}
