@@ -41,7 +41,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 400px;
 }
 
 .form-label {
@@ -89,7 +88,6 @@ nav {
   background-color: var(--background-color);
   text-align: center;
   padding: 75px;
-  margin: 20px;
 }
 
 .hero p {
@@ -107,7 +105,6 @@ Note: probably have to change the sizing of the grid/boxes later on for responsi
   text-align: center;
   background-color: var(--background-color);
   padding: 20px;
-  margin: 20px;
 }
 
 .stats {
@@ -133,7 +130,6 @@ Note: probably have to change the sizing of the grid/boxes later on for responsi
 
 .benefits {
   padding: 20px;
-  margin: 20px;
   background-color: var(--background-color);
 }
 
@@ -180,7 +176,7 @@ Note: probably have to change the sizing of the grid/boxes later on for responsi
 .showcase {
   display: flex;
   background-color: var(--background-color);
-  margin: 20px;
+
   padding-top: 30px;
   padding-bottom: 30px;
 }
