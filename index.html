@@ -3,24 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans+Khojki&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
+
   <body>
     <nav>
-      <figure>
+      <figure class="logo">
         <img src="assets/logo.svg" alt="Code Labs Academy Logo" />
-        <figcaption><b>CodeCLA</b></figcaption>
+        <figcaption>CodeCLA</figcaption>
       </figure>
 
-      <a href="#for-coders">For Coders</a>
-      <a href="#for-managers">For Managers</a>
-      <br />
-      <a href="pages/signup.html">
-        <button type="button" id="joinBtn">Join now</button>
-      </a>
+      <div class="nav-links">
+        <a href="#for-coders">For coders</a>
+        <a href="#for-developers">For developers</a>
+        <a href="pages/signup.html">
+          <button type="button" id="joinBtn">Join now</button>
+        </a>
+      </div>
     </nav>
 
-    <header>
+    <header class="hero">
       <h1>The Place for Competitive Programmers!</h1>
 
       <p>
@@ -29,163 +42,228 @@
         community.
       </p>
 
-      <a href="pages/signup.html">
-        <button type="button" id="coderBtn">Become a coder</button>
-      </a>
-      <a href="pages/signup.html">
-        <button type="button" id="managerBtn">Become a manager</button>
-      </a>
+      <div class="hero-buttons">
+        <a href="pages/signup.html">
+          <button type="button" id="coderBtn">Become a coder</button>
+        </a>
+        <a href="pages/signup.html">
+          <button type="button" id="managerBtn">Become a manager</button>
+        </a>
+      </div>
     </header>
 
-    <section>
+    <section class="practice">
       <h2>Practice to level-up</h2>
-      <p>
-        1K<br /><br />problems for practice<br /><br />
-        100+<br /><br />Coders<br /><br />
-        10+<br /><br />Programming languages<br /><br />
-        130K <br /><br />Submissions<br /><br />
-      </p>
+      <div class="stats">
+        <div class="box">
+          <span class="number">1K</span>
+          <span class="text">Problems for practice</span>
+        </div>
+        <div class="box">
+          <span class="number">100+</span>
+          <span class="text">Coders</span>
+        </div>
+        <div class="box">
+          <span class="number">10</span>
+          <span class="text">Programming languages</span>
+        </div>
+        <div class="box">
+          <span class="number">130K</span>
+          <span class="text">Submissions</span>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h3 id="for-coders">For coders</h3>
-      <h1>What you will gain</h1>
+    <section class="benefits">
+      <h2 id="for-coders">For coders</h2>
+      <h3>What you will <span>gain</span></h3>
       <p>
         You are a coder who wants to level-up his skills in coding and problem
         solving? Here is what we provide.
       </p>
-      <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
-      <p>
-        Rich practice set of problem<br />Access a rich library of practice,
-        algorithms, and data structure to enhance your skills
-      </p>
-      <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
-      <p>
-        Universal contests<br />Compete in regularty scheduled contest against
-        talent from around the globe
-      </p>
-      <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
-      <p>
-        Constant feedback<br />Receive personalized insights and feedback to
-        improve your problem-solving abilities
-      </p>
-      <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
-      <p>
-        Sharing is caring<br />Connect with like-minded individuals, form teams,
-        and tackle challenges together
-      </p>
-      <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
-      <p>Track your progress and climb the ranks on our leaderboard</p>
-      <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
-      <p>Detailed solution for problems</p>
 
-      <a href="pages/signup.html">
-        <button type="button">Join coders community</button>
-      </a>
+      <div class="benefit-grid">
+        <div class="benefit-box">
+          <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
+          <p>
+            Rich practice set of problem<br />Access a rich library of practice,
+            algorithms, and data structure to enhance your skills
+          </p>
+        </div>
+
+        <div class="benefit-box">
+          <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
+          <p>
+            Universal contests<br />Compete in regularty scheduled contest
+            against talent from around the globe
+          </p>
+        </div>
+
+        <div class="benefit-box">
+          <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
+          <p>
+            Constant feedback<br />Receive personalized insights and feedback to
+            improve your problem-solving abilities
+          </p>
+        </div>
+        <div class="benefit-box">
+          <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
+          <p>
+            Sharing is caring<br />Connect with like-minded individuals, form
+            teams, and tackle challenges together
+          </p>
+        </div>
+        <div class="benefit-box">
+          <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
+          <p>Track your progress and climb the ranks on our leaderboard</p>
+        </div>
+        <div class="benefit-box">
+          <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
+          <p>Detailed solution for problems</p>
+        </div>
+
+        <a href="pages/signup.html">
+          <button type="button">Join coders community</button>
+        </a>
+      </div>
     </section>
 
-    <section>
-      <h3 id="for-managers">For Managers</h3>
-      <h1>Access high-professional platform for coding challenges design</h1>
-      <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
-      <p>
-        Craft tailored coding challenges suited to your needs and objectives
-      </p>
-      <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
-      <p>
-        Design challenges that align perfectly with your recruitment criteria
-      </p>
-      <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
-      <p>
-        Choose from a wide range of problem types including algorithmic, data
-        structures, puzzles, and more.
-      </p>
-      <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
-      <p>Ergonomic tools for challenge design</p>
-      <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
-      <p>
-        Collaborate with colleagues or peers in creating and refining coding
-        challenges
-      </p>
-      <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
-      <p>Access dedicated support from our team of experts</p>
+    <section class="benefits">
+      <h2 id="for-managers">For Managers</h2>
+      <h3>
+        Access <span>high-professional</span> platform for coding challenges
+        design
+      </h3>
 
-      <a href="pages/signup.html">
-        <button type="button">Join managers community</button>
-      </a>
+      <div class="benefit-grid">
+        <div class="benefit-box">
+          <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
+          <p>
+            Craft tailored coding challenges suited to your needs and objectives
+          </p>
+        </div>
+        <div class="benefit-box">
+          <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
+          <p>
+            Design challenges that align perfectly with your recruitment
+            criteria
+          </p>
+        </div>
+        <div class="benefit-box">
+          <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
+          <p>
+            Choose from a wide range of problem types including algorithmic,
+            data structures, puzzles, and more.
+          </p>
+        </div>
+        <div class="benefit-box">
+          <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
+          <p>Ergonomic tools for challenge design</p>
+        </div>
+        <div class="benefit-box">
+          <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
+          <p>
+            Collaborate with colleagues or peers in creating and refining coding
+            challenges
+          </p>
+        </div>
+        <div class="benefit-box">
+          <img src="assets/ok.svg" alt="Green tick" loading="lazy" />
+          <p>Access dedicated support from our team of experts</p>
+        </div>
+
+        <a href="pages/signup.html">
+          <button type="button">Join managers community</button>
+        </a>
+      </div>
     </section>
 
-    <section>
+    <section class="showcase">
       <img
+        class="classroom"
         src="assets/team.svg"
         alt="people working on laptops in workspace"
         loading="lazy"
       />
-      <br />
-      <img src="assets/logo.svg" alt="Code Labs Academy Logo" loading="lazy" />
-    </section>
-
-    <section>
-      <h2>Brought to you by CLA</h2>
-      <p>
-        Join the Ultimate Hub for Competitive Programmers and reach growth and
-        excellence in competitive programming. <br />
-        Coding challenges is made simple by our platform. Access a dashboard of
-        tools for high-quality challenge design.
-      </p>
-    </section>
-
-    <section>
-      <h2>Testimonials</h2>
-      <p>
-        "This platform is an absolute game-changer for competitive programmers.
-        The extensive range of problems and challenges offered here truly hones
-        your skills and prepares you for any coding competition. With detailed
-        solutions and an active community, it's the perfect environment to
-        sharpen your coding prowess."
-      </p>
-      <img src="assets/junecha.jpg" alt="June Cha" loading="lazy" />
-      <p><b>June Cha</b></p>
-      <p>Software Engineer</p>
-      <button type="button" id="prevBtn">Previous</button>
-      <button type="button" id="nextBtn">Next</button>
-    </section>
-
-    <section>
-      <h2>Contact Us</h2>
-      <form action="/submit" method="post">
-        <label for="name">Name</label><br />
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your name"
-          required
+      <div class="showcase-content">
+        <img
+          class="showcase-logo"
+          src="assets/logo.svg"
+          alt="Code Labs Academy Logo"
+          loading="lazy"
         />
-        <br />
-        <label for="email">Email</label><br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your email"
-          required
-        />
-        <br />
-        <label for="message">Message</label><br />
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Your message"
-          required
-        ></textarea>
-        <br /><br />
-        <button type="submit">Submit</button>
-      </form>
+
+        <h2>Brought to you by CLA</h2>
+        <p>
+          Join the Ultimate Hub for Competitive Programmers and reach growth and
+          excellence in competitive programming. <br />
+          Coding challenges is made simple by our platform. Access a dashboard
+          of tools for high-quality challenge design.
+        </p>
+      </div>
     </section>
 
-    <footer>
-      <p>&copy; Your Competitive Programming Platform. All rights reserved.</p>
-    </footer>
+    <section class="testimonials">
+      <h2>Testimonial</h2>
+      <div class="testimonial-box">
+        <p class="testimonial-text">
+          This platform is an absolute game-changer for competitive programmers.
+          The extensive range of problems and challenges offered here truly
+          hones your skills and prepares you for any coding competition. With
+          detailed solutions and an active community, it's the perfect
+          environment to sharpen your coding prowess.
+        </p>
+        <img
+          class="testimonial-img"
+          src="assets/junecha.jpg"
+          alt="June Cha"
+          loading="lazy"
+        />
+        <p class="testimonial-name">June Cha</p>
+        <p class="testimonial-title">Software Engineer</p>
+      </div>
+      <!--<button type="button" id="prevBtn">Previous</button>
+      <button type="button" id="nextBtn">Next</button>-->
+    </section>
+
+    <section class="contact">
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form class="form" action="/submit" method="post">
+          <label class="form-label" for="name">Name</label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+          <label class="form-label" for="email">Email</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+            required
+          />
+          <label class="form-label" for="message">Message</label>
+          <textarea
+            class="form-input"
+            id="message"
+            name="message"
+            placeholder="Your message"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <footer class="footer">
+          <p>
+            &copy; Your Competitive Programming Platform. All rights reserved.
+          </p>
+        </footer>
+      </div>
+    </section>
   </body>
 </html>
