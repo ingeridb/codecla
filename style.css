@@ -54,6 +54,7 @@ button {
   padding: 15px;
   margin-bottom: 5px;
   border-radius: 5px;
+  border: none;
 }
 
 .form button {
@@ -259,6 +260,10 @@ OBS: buttons will be fixed in the Responsive Design Assignment  */
 
 .contact-form h2 {
   text-align: center;
+}
+
+.contact-form .form-input {
+  width: 50%;
 }
 
 .footer {
