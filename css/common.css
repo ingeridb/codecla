@@ -1,0 +1,80 @@
+/* Common styles for the website */
+
+:root {
+  --primary-color: #8053ff;
+  --main-body-color: #23155b;
+  --gray-light-color: #f4f4f4;
+  --white-color: #ffffff;
+  --background-color: #c5bfc5;
+  --sign-button: blue;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-inline: 20px;
+}
+
+body {
+  font-family: "Noto Sans Khojki", sans-serif;
+}
+
+h2,
+h3 {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Design for buttons */
+button {
+  background-color: var(--primary-color);
+  color: var(--gray-light-color);
+  opacity: 0.75;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Different style for login and sign-up buttons */
+.sign-btn {
+  background-color: var(--sign-button);
+  border: none;
+  align-self: center;
+  width: 60%;
+}
+
+/* General form design */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-label {
+  color: var(--white-color);
+  margin-bottom: 5px;
+}
+
+.form-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form button {
+  width: auto;
+  padding: 15px 10px;
+  margin-top: 15px;
+  border: none;
+}

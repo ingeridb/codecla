@@ -1,0 +1,65 @@
+/* SIGNIN.HTML and SIGNUP.HTML */
+
+/* Sign-in and sign-up pages */
+.signin {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+.signin > .boy-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-body-color);
+}
+
+.signin > .boy-side img {
+  width: 50%;
+}
+
+.signin > .form-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-side > .form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 1px rgba(41, 39, 39, 0.1);
+  width: 60%;
+}
+
+.form-side h1 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.form-side form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  width: 100%;
+}
+
+.signin .sign-form .form-input {
+  background-color: var(--main-body-color);
+  border: none;
+  color: var(--white-color);
+}
+
+.signin .sign-form .form-input::placeholder {
+  color: white;
+  opacity: 0.75;
+}
