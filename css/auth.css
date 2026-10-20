@@ -2,10 +2,10 @@
 
 /* Sign-in and sign-up pages */
 .signin {
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
   width: 100%;
   min-height: 100vh;
-  background-color: var(--background-color);
 }
 
 .signin > .boy-side {
@@ -17,7 +17,7 @@
 }
 
 .signin > .boy-side img {
-  width: 50%;
+  width: 40%;
 }
 
 .signin > .form-side {
@@ -26,7 +26,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .form-side > .form-box {
@@ -34,14 +34,14 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--white-color);
-  padding: 20px;
+  padding: 5%;
   border-radius: 5px;
   box-shadow: 3px 3px 5px 1px rgba(41, 39, 39, 0.1);
-  width: 60%;
+  width: 80%;
 }
 
 .form-side h1 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--primary-color);
 }
 
@@ -49,7 +49,7 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 10px;
+  gap: 5px;
   width: 100%;
 }
 
@@ -62,4 +62,24 @@
 .signin .sign-form .form-input::placeholder {
   color: white;
   opacity: 0.75;
+}
+
+@media screen and (min-width: 401px) {
+  body {
+    .form-side h1 {
+      font-size: 1.5rem;
+    }
+
+    .form-side > .form-box {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (min-width: 961px) {
+  body {
+    .signin {
+      display: flex;
+    }
+  }
 }
